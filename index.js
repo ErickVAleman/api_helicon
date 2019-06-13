@@ -1,11 +1,13 @@
 var express = require('express');
 var cors = require('cors')
-var app = express(cors);
+var app = express();
 
 var upperPhrase = require('./controller/upperPhrase');
 var port = process.env.PORT ? process.env.PORT : 3000;
 var host = '127.0.0.1';
 
+
+app.use(cors)
 app.get('/', (req, res) =>{
     console.log(req);
     res.status(200).send(`
