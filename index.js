@@ -7,7 +7,7 @@ var port = process.env.PORT ? process.env.PORT : 3000;
 var host = '127.0.0.1';
 
 
-app.use(cors)
+app.use(cors())
 app.get('/', (req, res) =>{
     console.log(req);
     res.status(200).send(`
@@ -22,4 +22,4 @@ app.get('/api/v1/upperPhrase',(req, res) => {
    return toUpperPhrase.getUpperPhrase()
 });
 
-app.listen(port,host);
+app.listen(port);
