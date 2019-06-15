@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "set DEBUG=* && nodemon server.js",
-    "prod": "set NODE_ENV=production && node server.js",
+    "dev": "set DEBUG=* && nodemon server.js",
+    "start": "set NODE_ENV=production && node server.js",
     "test": "jest"
   },
   "author": "Erick Villalobos Aleman",
